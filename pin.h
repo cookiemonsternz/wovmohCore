@@ -72,7 +72,7 @@ public:
     
     // Getters
     PinDirection getDirection() const override { return PinDirection::OUTPUT; }
-    DataValue& getValue();
+    const DataValue& getValue() const;
     void setValue(const DataValue &value);
 
     // Connections
