@@ -14,6 +14,10 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
 add_executable(wovmohCore
   main.cpp
+  DataTypes.h
+  pin.h pin.cpp
+  node.h node.cpp
+  patchgraph.h patchgraph.cpp
 )
 target_link_libraries(wovmohCore Qt${QT_VERSION_MAJOR}::Core)
 
