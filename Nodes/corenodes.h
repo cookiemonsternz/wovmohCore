@@ -26,6 +26,14 @@ public:
     void process() override;
 };
 
+// Multiply node
+class MultiplyNode : public Node
+{
+public:
+    MultiplyNode(std::string id, std::string name);
+    void process() override;
+};
+
 // Debug print Node
 class DebugNode : public Node
 {

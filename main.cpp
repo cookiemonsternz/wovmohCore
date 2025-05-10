@@ -13,9 +13,9 @@ int main(int argc, char *argv[])
     PatchGraph patchGraph;
 
     // Create nodes
-    Node* constantNode = new ConstantNumberNode("const1", "Constant Node 1", 5.0);
+    Node* constantNode = new ConstantNumberNode("const1", "Constant Node 1", 50.0);
     Node* constantNode2 = new ConstantNumberNode("const2", "Constant Node 2", 10.0);
-    Node* addNode = new AddNode("add1", "Add Node");
+    Node* addNode = new MultiplyNode("add1", "Add Node");
     Node* debugNode = new DebugNode("debug1", "Debug Node");
 
     if (!constantNode || !constantNode2 || !addNode || !debugNode)
@@ -39,8 +39,6 @@ int main(int argc, char *argv[])
     debugNode->process();
 
     qDebug() << "Engine test finished";
-
-    a.exit();
 
     return a.exec();
 }
