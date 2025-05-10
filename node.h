@@ -7,6 +7,7 @@
 #include <string>
 #include <vector>
 #include <memory>
+#include <algorithm> // for std::find_if
 
 class Node
 {

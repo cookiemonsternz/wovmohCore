@@ -18,6 +18,7 @@ add_executable(wovmohCore
   pin.h pin.cpp
   node.h node.cpp
   patchgraph.h patchgraph.cpp
+  Nodes/corenodes.h Nodes/corenodes.cpp
 )
 target_link_libraries(wovmohCore Qt${QT_VERSION_MAJOR}::Core)
 

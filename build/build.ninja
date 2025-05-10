@@ -89,6 +89,14 @@ build CMakeFiles/wovmohCore.dir/patchgraph.cpp.obj: CXX_COMPILER__wovmohCore_uns
   OBJECT_DIR = CMakeFiles\wovmohCore.dir
   OBJECT_FILE_DIR = CMakeFiles\wovmohCore.dir
 
+build CMakeFiles/wovmohCore.dir/Nodes/corenodes.cpp.obj: CXX_COMPILER__wovmohCore_unscanned_Debug C$:/Users/Christopher/Documents/.Projects/QT$ Projects/wovmohCore/Nodes/corenodes.cpp || cmake_object_order_depends_target_wovmohCore
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\wovmohCore.dir\Nodes\corenodes.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17
+  INCLUDES = -I"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/wovmohCore_autogen/include" -isystem C:/Qt/6.9.0/mingw_64/include/QtCore -isystem C:/Qt/6.9.0/mingw_64/include -isystem C:/Qt/6.9.0/mingw_64/mkspecs/win32-g++
+  OBJECT_DIR = CMakeFiles\wovmohCore.dir
+  OBJECT_FILE_DIR = CMakeFiles\wovmohCore.dir\Nodes
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target wovmohCore
@@ -97,7 +105,7 @@ build CMakeFiles/wovmohCore.dir/patchgraph.cpp.obj: CXX_COMPILER__wovmohCore_uns
 #############################################
 # Link the executable wovmohCore.exe
 
-build wovmohCore.exe: CXX_EXECUTABLE_LINKER__wovmohCore_Debug CMakeFiles/wovmohCore.dir/wovmohCore_autogen/mocs_compilation.cpp.obj CMakeFiles/wovmohCore.dir/main.cpp.obj CMakeFiles/wovmohCore.dir/pin.cpp.obj CMakeFiles/wovmohCore.dir/node.cpp.obj CMakeFiles/wovmohCore.dir/patchgraph.cpp.obj | C$:/Qt/6.9.0/mingw_64/lib/libQt6Core.a || wovmohCore_autogen wovmohCore_autogen_timestamp_deps
+build wovmohCore.exe: CXX_EXECUTABLE_LINKER__wovmohCore_Debug CMakeFiles/wovmohCore.dir/wovmohCore_autogen/mocs_compilation.cpp.obj CMakeFiles/wovmohCore.dir/main.cpp.obj CMakeFiles/wovmohCore.dir/pin.cpp.obj CMakeFiles/wovmohCore.dir/node.cpp.obj CMakeFiles/wovmohCore.dir/patchgraph.cpp.obj CMakeFiles/wovmohCore.dir/Nodes/corenodes.cpp.obj | C$:/Qt/6.9.0/mingw_64/lib/libQt6Core.a || wovmohCore_autogen wovmohCore_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g
   LINK_LIBRARIES = C:/Qt/6.9.0/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\wovmohCore.dir

@@ -29,6 +29,16 @@
         "variant": "cpp",
         "xmemory": "cpp",
         "xtr1common": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "algorithm": "cpp",
+        "chrono": "cpp",
+        "functional": "cpp",
+        "optional": "cpp",
+        "system_error": "cpp",
+        "xlocmon": "cpp",
+        "charconv": "cpp",
+        "format": "cpp",
+        "ratio": "cpp",
+        "array": "cpp"
     }
 }

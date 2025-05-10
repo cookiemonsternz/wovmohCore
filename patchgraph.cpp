@@ -1,5 +1,5 @@
 #include "patchgraph.h"
-
+#include <QDebug>
 PatchGraph::PatchGraph() {}
 
 // Node management
@@ -45,7 +45,7 @@ void PatchGraph::connect(const std::string &sourceNodeId, const std::string &out
 
     if (!sourceNode || !destNode)
     {
-        // Handle error: node not found
+        qDebug() << "Error: Source or destination node not found";
         return;
     }
 
@@ -57,7 +57,7 @@ void PatchGraph::connect(const std::string &sourceNodeId, const std::string &out
     }
     else
     {
-        // Handle error: pin not found
+        qDebug() << "Error: Output or input pin not found";
     }
 };
 void PatchGraph::disconnect(const std::string &destNodeId, const std::string &inputPinId)

@@ -196,6 +196,12 @@
 			null
 		],
 		[
+			"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/Nodes/corenodes.h",
+			"MU",
+			"CWCUB3T6D3/moc_corenodes.cpp",
+			null
+		],
+		[
 			"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/node.h",
 			"MU",
 			"EWIEGA46WW/moc_node.cpp",
@@ -280,6 +286,11 @@
 	"SETTINGS_FILE" : "C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/CMakeFiles/wovmohCore_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/Nodes/corenodes.cpp",
+			"MU",
+			null
+		],
 		[
 			"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/main.cpp",
 			"MU",

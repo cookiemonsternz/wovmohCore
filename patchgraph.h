@@ -13,7 +13,7 @@ class PatchGraph
 {
 public:
     PatchGraph();
-    ~PatchGraph();
+    ~PatchGraph() = default;
 
     // Node management
     Node* addNode(std::unique_ptr<Node> node); // Take ownership of the node
