@@ -1,0 +1,32 @@
+[
+{
+  "directory": "C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build",
+  "command": "c:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -I\"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/wovmohCore_autogen/include\" -isystem C:/Qt/6.9.0/mingw_64/include/QtCore -isystem C:/Qt/6.9.0/mingw_64/include -isystem C:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17 -o CMakeFiles\\wovmohCore.dir\\wovmohCore_autogen\\mocs_compilation.cpp.obj -c \"C:\\Users\\Christopher\\Documents\\.Projects\\QT Projects\\wovmohCore\\build\\wovmohCore_autogen\\mocs_compilation.cpp\"",
+  "file": "C:\\Users\\Christopher\\Documents\\.Projects\\QT Projects\\wovmohCore\\build\\wovmohCore_autogen\\mocs_compilation.cpp",
+  "output": "CMakeFiles\\wovmohCore.dir\\wovmohCore_autogen\\mocs_compilation.cpp.obj"
+},
+{
+  "directory": "C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build",
+  "command": "c:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -I\"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/wovmohCore_autogen/include\" -isystem C:/Qt/6.9.0/mingw_64/include/QtCore -isystem C:/Qt/6.9.0/mingw_64/include -isystem C:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17 -o CMakeFiles\\wovmohCore.dir\\main.cpp.obj -c \"C:\\Users\\Christopher\\Documents\\.Projects\\QT Projects\\wovmohCore\\main.cpp\"",
+  "file": "C:\\Users\\Christopher\\Documents\\.Projects\\QT Projects\\wovmohCore\\main.cpp",
+  "output": "CMakeFiles\\wovmohCore.dir\\main.cpp.obj"
+},
+{
+  "directory": "C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build",
+  "command": "c:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -I\"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/wovmohCore_autogen/include\" -isystem C:/Qt/6.9.0/mingw_64/include/QtCore -isystem C:/Qt/6.9.0/mingw_64/include -isystem C:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17 -o CMakeFiles\\wovmohCore.dir\\pin.cpp.obj -c \"C:\\Users\\Christopher\\Documents\\.Projects\\QT Projects\\wovmohCore\\pin.cpp\"",
+  "file": "C:\\Users\\Christopher\\Documents\\.Projects\\QT Projects\\wovmohCore\\pin.cpp",
+  "output": "CMakeFiles\\wovmohCore.dir\\pin.cpp.obj"
+},
+{
+  "directory": "C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build",
+  "command": "c:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -I\"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/wovmohCore_autogen/include\" -isystem C:/Qt/6.9.0/mingw_64/include/QtCore -isystem C:/Qt/6.9.0/mingw_64/include -isystem C:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17 -o CMakeFiles\\wovmohCore.dir\\node.cpp.obj -c \"C:\\Users\\Christopher\\Documents\\.Projects\\QT Projects\\wovmohCore\\node.cpp\"",
+  "file": "C:\\Users\\Christopher\\Documents\\.Projects\\QT Projects\\wovmohCore\\node.cpp",
+  "output": "CMakeFiles\\wovmohCore.dir\\node.cpp.obj"
+},
+{
+  "directory": "C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build",
+  "command": "c:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -I\"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/wovmohCore_autogen/include\" -isystem C:/Qt/6.9.0/mingw_64/include/QtCore -isystem C:/Qt/6.9.0/mingw_64/include -isystem C:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17 -o CMakeFiles\\wovmohCore.dir\\patchgraph.cpp.obj -c \"C:\\Users\\Christopher\\Documents\\.Projects\\QT Projects\\wovmohCore\\patchgraph.cpp\"",
+  "file": "C:\\Users\\Christopher\\Documents\\.Projects\\QT Projects\\wovmohCore\\patchgraph.cpp",
+  "output": "CMakeFiles\\wovmohCore.dir\\patchgraph.cpp.obj"
+}
+]

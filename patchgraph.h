@@ -7,6 +7,7 @@
 #include <vector>
 #include <memory> // for std::unique_ptr
 #include <map> // for std::map
+#include <algorithm> // for std::remove_if
 
 class PatchGraph
 {
@@ -26,11 +27,11 @@ public:
     // Processing
     void evaluate(); // Later will do topological sort
 
-    const std::map<std::string, std::unique_ptr<Node>>& getAllNodes() const;
+    const std::map<std::string, Node*>& getAllNodes() const;
 
 private:
     std::vector<std::unique_ptr<Node>> m_nodes; // Owned nodes
-    std::map<std::string, std::unique_ptr<Node>> m_nodeMap; // Quick access, non-owning pointers
+    std::map<std::string, Node*> m_nodeMap; // Quick access, non-owning pointers
 };
 
 #endif // PATCHGRAPH_H

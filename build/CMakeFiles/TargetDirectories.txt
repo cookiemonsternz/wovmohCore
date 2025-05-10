@@ -1,0 +1,9 @@
+C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/CMakeFiles/wovmohCore.dir
+C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/CMakeFiles/edit_cache.dir
+C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/CMakeFiles/rebuild_cache.dir
+C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/CMakeFiles/list_install_components.dir
+C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/CMakeFiles/install.dir
+C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/CMakeFiles/install/local.dir
+C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/CMakeFiles/install/strip.dir
+C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/CMakeFiles/wovmohCore_autogen_timestamp_deps.dir
+C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/CMakeFiles/wovmohCore_autogen.dir
