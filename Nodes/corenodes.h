@@ -14,6 +14,9 @@ public:
     ConstantNumberNode(std::string id, std::string name, double value);
     void process() override;
 
+    // Serialization
+    json getParameters() const override;
+    void setParameters(const json &params) override;
 private:
     double m_value;
 };

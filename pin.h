@@ -46,13 +46,14 @@ protected:
 class InputPin : public BasePin
 {
 public:
-    InputPin(Node *parentNode, PinDataType pinType, const std::string &id, const std::string &name);
+    InputPin(Node *parentNode, PinDataType pinType, const std::string &id, const std::string &name, DataValue defaultValue);
     
     // Getters
     PinDirection getDirection() const override { return PinDirection::INPUT; }
     bool isConnected() const;
     OutputPin *getConnectedOutputPin() const;
     DataValue getValue() const;
+    void setValue(const DataValue &value); // only if not connected
     
     // Connections
     void connect(OutputPin *outputPin);
@@ -60,6 +61,7 @@ public:
     
 private:
     OutputPin *m_connectedOutputPin = nullptr;
+    DataValue m_value;
 };
 
 /********************************************************/

@@ -2,12 +2,15 @@
 #define PATCHGRAPH_H
 
 #include "node.h"
+#include "lib/json.hpp" // Nlohmann json
+using json = nlohmann::json;
 
 #include <string>
 #include <vector>
 #include <memory> // for std::unique_ptr
 #include <map> // for std::map
 #include <algorithm> // for std::remove_if
+#include <queue> // for std::queue
 
 class PatchGraph
 {
@@ -27,11 +30,22 @@ public:
     // Processing
     void evaluate(); // Later will do topological sort
 
-    const std::map<std::string, Node*>& getAllNodes() const;
+    void resort();
 
+    const std::map<std::string, Node*>& getAllNodes() const;
+    
+    // Serialization
+    std::string title = "Untitled";
+    std::string description = "No description";
+    std::string author = "Unknown";
+
+    json toJson() const;
+    void fromJson(const json& j);
 private:
     std::vector<std::unique_ptr<Node>> m_nodes; // Owned nodes
     std::map<std::string, Node*> m_nodeMap; // Quick access, non-owning pointers
+    std::vector<Node*> getTopologicallySortedNodes() const;
+    std::vector<Node*> m_sorted_nodes;
 };
 
 #endif // PATCHGRAPH_H

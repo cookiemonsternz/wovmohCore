@@ -196,15 +196,21 @@
 			null
 		],
 		[
-			"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/Nodes/corenodes.h",
+			"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/lib/json.hpp",
 			"MU",
-			"CWCUB3T6D3/moc_corenodes.cpp",
+			"ZJOKMXDKB7/moc_json.cpp",
 			null
 		],
 		[
 			"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/node.h",
 			"MU",
 			"EWIEGA46WW/moc_node.cpp",
+			null
+		],
+		[
+			"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/nodes/corenodes.h",
+			"MU",
+			"HGMM2TZZ6Q/moc_corenodes.cpp",
 			null
 		],
 		[
@@ -287,17 +293,17 @@
 	"SOURCES" : 
 	[
 		[
-			"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/Nodes/corenodes.cpp",
-			"MU",
-			null
-		],
-		[
 			"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/main.cpp",
 			"MU",
 			null
 		],
 		[
 			"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/node.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/nodes/corenodes.cpp",
 			"MU",
 			null
 		],

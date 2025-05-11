@@ -19,12 +19,31 @@ void ConstantNumberNode::process()
     // no process
 }
 
+json ConstantNumberNode::getParameters() const
+{
+    json params;
+    params["value"] = m_value;
+    return params;
+}
+
+void ConstantNumberNode::setParameters(const json &params)
+{
+    if (params.contains("value"))
+    {
+        m_value = params["value"];
+        if (auto outputPin = getOutputPin("out"))
+        {
+            outputPin->setValue(DataValue(m_value));
+        }
+    }
+}
+
 // AddNode Implementation
 AddNode::AddNode(std::string id, std::string name)
     : Node(id, name, "AddNode")
 {
-    addInputPin(PinDataType::NUMBER, "in1", "Input A");
-    addInputPin(PinDataType::NUMBER, "in2", "Input B");
+    addInputPin(PinDataType::NUMBER, "in1", "Input A", 0.0);
+    addInputPin(PinDataType::NUMBER, "in2", "Input B", 0.0);
     addOutputPin(PinDataType::NUMBER, "out", "Result");
 }
 
@@ -74,8 +93,8 @@ void AddNode::process()
 MultiplyNode::MultiplyNode(std::string id, std::string name)
     : Node(id, name, "MultiplyNode")
 {
-    addInputPin(PinDataType::NUMBER, "in1", "Input A");
-    addInputPin(PinDataType::NUMBER, "in2", "Input B");
+    addInputPin(PinDataType::NUMBER, "in1", "Input A", 0.0);
+    addInputPin(PinDataType::NUMBER, "in2", "Input B", 0.0);
     addOutputPin(PinDataType::NUMBER, "out", "Result");
 }
 
@@ -125,7 +144,7 @@ void MultiplyNode::process()
 DebugNode::DebugNode(std::string id, std::string name)
     : Node(id, name, "DebugNode")
 {
-    addInputPin(PinDataType::NUMBER, "inNum", "Number Input");
+    addInputPin(PinDataType::NUMBER, "inNum", "Number Input", 0.0);
     // addInputPin(PinDataType::BOOLEAN, "inBool", "Bool Input");
     // addInputPin(PinDataType::COLOR, "inColor", "Color Input");
     // addInputPin(PinDataType::VECTOR, "inVec", "Vector Input");

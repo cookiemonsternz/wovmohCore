@@ -19,6 +19,7 @@ add_executable(wovmohCore
   node.h node.cpp
   patchgraph.h patchgraph.cpp
   Nodes/corenodes.h Nodes/corenodes.cpp
+  lib/json.hpp
 )
 target_link_libraries(wovmohCore Qt${QT_VERSION_MAJOR}::Core)
 

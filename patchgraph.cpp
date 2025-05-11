@@ -1,5 +1,8 @@
 #include "patchgraph.h"
+#include "nodes/corenodes.h"
 #include <QDebug>
+#include <fstream>
+
 PatchGraph::PatchGraph() {}
 
 // Node management
@@ -10,6 +13,7 @@ Node *PatchGraph::addNode(std::unique_ptr<Node> node)
     m_nodeMap[nodePtr->getId()] = nodePtr;
     return nodePtr;
 };
+
 void PatchGraph::removeNode(const std::string &nodeId)
 {
     // First delete from map, then vector. If vector is deleted, it deallocates the memory (bc of unique_ptr))
@@ -27,6 +31,7 @@ void PatchGraph::removeNode(const std::string &nodeId)
         }
     }
 };
+
 Node *PatchGraph::findNode(const std::string &nodeId) const
 {
     auto it = m_nodeMap.find(nodeId);
@@ -60,6 +65,7 @@ void PatchGraph::connect(const std::string &sourceNodeId, const std::string &out
         qDebug() << "Error: Output or input pin not found";
     }
 };
+
 void PatchGraph::disconnect(const std::string &destNodeId, const std::string &inputPinId)
 {
     Node *destNode = findNode(destNodeId);
@@ -81,16 +87,194 @@ void PatchGraph::disconnect(const std::string &destNodeId, const std::string &in
 };
 
 // Processing
-void evaluate(); // Later will do topological sort, for now just call sequentially from vector, so in order of creation
 void PatchGraph::evaluate()
 {
-    for (const auto &node : m_nodes)
+    for (Node *node : m_sorted_nodes)
     {
         node->process(); // Call process on each node
     }
 };
 
-const std::map<std::string, Node*>& PatchGraph::getAllNodes() const
+void PatchGraph::resort()
+{
+    m_sorted_nodes = getTopologicallySortedNodes();
+}
+
+const std::map<std::string, Node *> &PatchGraph::getAllNodes() const
 {
     return m_nodeMap;
+}
+
+// Topological sort - Khan's algorithm
+// see https://www.geeksforgeeks.org/topological-sorting-indegree-based-solution/
+// Raw pointers for nodes
+
+std::vector<Node *> PatchGraph::getTopologicallySortedNodes() const
+{
+    std::map<Node *, int> in_degrees;
+    std::queue<Node *> queue;
+    std::vector<Node *> sorted_result;
+
+    // Init indegrees
+    for (const auto &node_unique_ptr : m_nodes)
+    {
+        Node *node = node_unique_ptr.get();
+
+        int degree = node->getInDegree();
+        in_degrees[node] = degree;
+
+        // Do it now instead of iterating again later
+        if (degree == 0)
+        {
+            queue.push(node);
+        }
+    }
+
+    while (!queue.empty())
+    {
+        Node *current_node = queue.front(); // get data
+        queue.pop();                        // remove element
+
+        sorted_result.push_back(current_node);
+
+        for (const std::unique_ptr<OutputPin> &out_pin_unique_ptr : current_node->getOutputPins())
+        {
+            OutputPin *out_pin = out_pin_unique_ptr.get();
+            for (InputPin *in_pin : out_pin->getConnectedInputPins())
+            {
+                Node *connected_node = in_pin->getParentNode();
+                if (connected_node)
+                {
+                    in_degrees[connected_node]--;
+                    if (in_degrees[connected_node] == 0)
+                    {
+                        queue.push(connected_node);
+                    }
+                } // Connected input parent node exists
+            } // foreach input pin
+        } // foreach output pin
+    } // while queue
+
+    // Check for loops
+    if (sorted_result.size() != m_nodes.size())
+    {
+        qDebug() << "ERROR - Cycle in graph, returned empty dict, this is probably why your code broke!";
+        return {};
+    }
+
+    return sorted_result;
+}
+
+// JSON serialization
+json PatchGraph::toJson() const
+{
+    std::vector<json> nodesJson;
+    std::vector<json> connectionsJson;
+    for (const auto &node : m_nodes)
+    {
+        json nodeJson = {
+            {"id", node->getId()},
+            {"name", node->getName()},
+            {"type", node->getType()},
+        };
+        nodeJson["parameters"] = node->getParameters();
+        nodesJson.push_back(nodeJson);
+    }
+    for (const auto &node : m_nodes)
+    {
+        for (const auto &outPin : node->getOutputPins())
+        {
+            for (InputPin *inPin : outPin->getConnectedInputPins())
+            {
+                json connectionJson = {
+                    {"sourceNodeId", node->getId()},
+                    {"outputPinId", outPin->getId()},
+                    {"destNodeId", inPin->getParentNode()->getId()},
+                    {"inputPinId", inPin->getId()}};
+                connectionsJson.push_back(connectionJson);
+            }
+        }
+    }
+    nlohmann::ordered_json j;
+    j = {
+        {"metadata", {{"version", 0.1}, {"title", title}, {"description", description}, {"author", author}}},
+        {"nodes", nodesJson},
+        {"connections", connectionsJson}};
+    // TEMP, save to file
+    // write prettified JSON to another file
+    std::ofstream o("../pretty.json");
+    o << std::setw(4) << j << std::endl;
+    return j;
+}
+
+void PatchGraph::fromJson(const json &j)
+{
+    // delete all nodes
+    m_nodes.clear();
+    m_nodeMap.clear();
+    m_sorted_nodes.clear();
+
+    // metadata
+    if (j.contains("metadata"))
+    {
+        title = j["metadata"]["title"];
+        description = j["metadata"]["description"];
+        author = j["metadata"]["author"];
+    }
+
+    // nodes
+    if (j.contains("nodes"))
+    {
+        for (const auto &nodeJson : j["nodes"])
+        {
+            std::string id = nodeJson["id"];
+            std::string name = nodeJson["name"];
+            std::string type = nodeJson["type"];
+
+            // Create a new node based on the type
+            Node *node = nullptr;
+            if (type == "ConstantNumberNode")
+            {
+                double value = nodeJson["parameters"]["value"];
+                node = new ConstantNumberNode(id, name, value);
+            }
+            else if (type == "AddNode")
+            {
+                node = new AddNode(id, name);
+            }
+            else if (type == "MultiplyNode")
+            {
+                node = new MultiplyNode(id, name);
+            }
+            else if (type == "DebugNode")
+            {
+                node = new DebugNode(id, name);
+            }
+            else
+            {
+                qDebug() << "Unknown node type:" << type;
+                continue; // Skip unknown types
+            }
+            // Set parameters
+            if (nodeJson.contains("parameters"))
+            {
+                node->setParameters(nodeJson["parameters"]);
+            }
+            // Add the node to the patch graph
+            addNode(std::unique_ptr<Node>(node));
+        }
+    }
+    // connections
+    if (j.contains("connections"))
+    {
+        for (const auto &connectionJson : j["connections"])
+        {
+            std::string sourceNodeId = connectionJson["sourceNodeId"];
+            std::string outputPinId = connectionJson["outputPinId"];
+            std::string destNodeId = connectionJson["destNodeId"];
+            std::string inputPinId = connectionJson["inputPinId"];
+
+            connect(sourceNodeId, outputPinId, destNodeId, inputPinId);
+        }
+    }
 }

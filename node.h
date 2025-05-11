@@ -3,6 +3,8 @@
 
 #include "DataTypes.h"
 #include "pin.h"
+#include "lib/json.hpp" // For json
+using json = nlohmann::json;
 
 #include <string>
 #include <vector>
@@ -28,9 +30,15 @@ public:
     const std::vector<std::unique_ptr<InputPin>>& getInputPins() const;
     const std::vector<std::unique_ptr<OutputPin>>& getOutputPins() const;
     
+    // Sorting
+    int getInDegree() const;
+    
+    // Serialization
+    virtual json getParameters() const;
+    virtual void setParameters(const json &params);
 protected:
     // for derived classes
-    void addInputPin(PinDataType pinType, const std::string &id, const std::string &name);
+    void addInputPin(PinDataType pinType, const std::string &id, const std::string &name, DataValue defaultValue);
     void addOutputPin(PinDataType pinType, const std::string &id, const std::string &name);
     
     std::string m_id;   // unique within node

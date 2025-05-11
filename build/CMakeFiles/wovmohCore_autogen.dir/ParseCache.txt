@@ -9,3 +9,6 @@ C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/patchgraph.cpp
 C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/pin.h
 C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/main.cpp
 C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/node.cpp
+C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/nodes/corenodes.h
+C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/nodes/corenodes.cpp
+C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/lib/json.hpp

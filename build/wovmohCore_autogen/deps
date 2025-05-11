@@ -117,14 +117,15 @@ wovmohCore_autogen/timestamp: \
 	C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateVersionlessAliasTargets.cmake \
 	C:/Users/Christopher/Documents/.Projects/QT\ Projects/wovmohCore/CMakeLists.txt \
 	C:/Users/Christopher/Documents/.Projects/QT\ Projects/wovmohCore/DataTypes.h \
-	C:/Users/Christopher/Documents/.Projects/QT\ Projects/wovmohCore/Nodes/corenodes.cpp \
-	C:/Users/Christopher/Documents/.Projects/QT\ Projects/wovmohCore/Nodes/corenodes.h \
 	C:/Users/Christopher/Documents/.Projects/QT\ Projects/wovmohCore/build/CMakeFiles/3.31.5/CMakeCXXCompiler.cmake \
 	C:/Users/Christopher/Documents/.Projects/QT\ Projects/wovmohCore/build/CMakeFiles/3.31.5/CMakeRCCompiler.cmake \
 	C:/Users/Christopher/Documents/.Projects/QT\ Projects/wovmohCore/build/CMakeFiles/3.31.5/CMakeSystem.cmake \
+	C:/Users/Christopher/Documents/.Projects/QT\ Projects/wovmohCore/lib/json.hpp \
 	C:/Users/Christopher/Documents/.Projects/QT\ Projects/wovmohCore/main.cpp \
 	C:/Users/Christopher/Documents/.Projects/QT\ Projects/wovmohCore/node.cpp \
 	C:/Users/Christopher/Documents/.Projects/QT\ Projects/wovmohCore/node.h \
+	C:/Users/Christopher/Documents/.Projects/QT\ Projects/wovmohCore/nodes/corenodes.cpp \
+	C:/Users/Christopher/Documents/.Projects/QT\ Projects/wovmohCore/nodes/corenodes.h \
 	C:/Users/Christopher/Documents/.Projects/QT\ Projects/wovmohCore/patchgraph.cpp \
 	C:/Users/Christopher/Documents/.Projects/QT\ Projects/wovmohCore/patchgraph.h \
 	C:/Users/Christopher/Documents/.Projects/QT\ Projects/wovmohCore/pin.cpp \

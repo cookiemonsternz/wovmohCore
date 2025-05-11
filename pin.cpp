@@ -55,9 +55,10 @@ std::string BasePin::getDataTypeString() const
 /********************************************************/
 /*                         INPUT PIN                    */
 /********************************************************/
-InputPin::InputPin(Node *parentNode, PinDataType pinType, const std::string &id, const std::string &name)
+InputPin::InputPin(Node *parentNode, PinDataType pinType, const std::string &id, const std::string &name, DataValue defaultValue)
     : BasePin(parentNode, pinType, id, name)
 {
+    m_value = defaultValue; // Set default value
     // m_connectedOutputPin already nullptr bc default initializer
 }
 bool InputPin::isConnected() const
@@ -78,7 +79,21 @@ OutputPin *InputPin::getConnectedOutputPin() const
 }
 DataValue InputPin::getValue() const
 {
-    return m_connectedOutputPin->getValue();
+    if (m_connectedOutputPin == nullptr)
+    {
+        return m_value;
+    }
+    else 
+    {
+        return m_connectedOutputPin->getValue();
+    }
+}
+void InputPin::setValue(const DataValue &value)
+{
+    if (m_connectedOutputPin == nullptr)
+    {
+        m_value = value;
+    }
 }
 // Connections
 void InputPin::connect(OutputPin *outputPin)

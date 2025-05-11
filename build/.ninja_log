@@ -1,37 +1,13 @@
 # ninja log v6
-51	208	7685678169714633	wovmohCore_autogen/mocs_compilation.cpp	13af409c3c037453
-51	208	7685678169714633	wovmohCore_autogen/timestamp	13af409c3c037453
+142	1035	7686546477412363	CMakeFiles/wovmohCore.dir/pin.cpp.obj	1aa38df3ad27ceb6
+41	157	7686569396440714	wovmohCore_autogen/timestamp	13af409c3c037453
 328	633	7685387739239377	CMakeFiles/wovmohCore.dir/wovmohCore_autogen/mocs_compilation.cpp.obj	102d5f4126d5deae
-336	912	7685387739314627	CMakeFiles/wovmohCore.dir/pin.cpp.obj	1aa38df3ad27ceb6
-51	208	7685678169714633	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/wovmohCore_autogen/timestamp	13af409c3c037453
-51	208	7685678169714633	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/wovmohCore_autogen/mocs_compilation.cpp	13af409c3c037453
-341	1046	7685387739364676	CMakeFiles/wovmohCore.dir/node.cpp.obj	b13ca72133d3ab85
-150	1863	7685674885084837	CMakeFiles/wovmohCore.dir/patchgraph.cpp.obj	bae57677ab953725
-208	2444	7685678171286477	CMakeFiles/wovmohCore.dir/main.cpp.obj	2f14a179bb8f8b27
-2444	2648	7685678193644532	wovmohCore.exe	fc49239040ad2138
-30	144	7685682490519006	wovmohCore_autogen/timestamp	13af409c3c037453
-30	144	7685682490519006	wovmohCore_autogen/mocs_compilation.cpp	13af409c3c037453
-30	144	7685682490519006	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/wovmohCore_autogen/timestamp	13af409c3c037453
-30	144	7685682490519006	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/wovmohCore_autogen/mocs_compilation.cpp	13af409c3c037453
-148	2164	7685682491702046	CMakeFiles/wovmohCore.dir/Nodes/corenodes.cpp.obj	b66748259e54b009
-145	2165	7685682491672056	CMakeFiles/wovmohCore.dir/main.cpp.obj	2f14a179bb8f8b27
-2165	2389	7685682511871212	wovmohCore.exe	2a1bc3b512fb743a
-11	127	7685692495039181	wovmohCore_autogen/timestamp	13af409c3c037453
-11	127	7685692495039181	wovmohCore_autogen/mocs_compilation.cpp	13af409c3c037453
-11	127	7685692495039181	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/wovmohCore_autogen/timestamp	13af409c3c037453
-11	127	7685692495039181	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/wovmohCore_autogen/mocs_compilation.cpp	13af409c3c037453
-128	1857	7685692496219820	CMakeFiles/wovmohCore.dir/main.cpp.obj	2f14a179bb8f8b27
-1857	2064	7685692513502202	wovmohCore.exe	2a1bc3b512fb743a
-32	131	7685693166155420	wovmohCore_autogen/timestamp	13af409c3c037453
-32	131	7685693166155420	wovmohCore_autogen/mocs_compilation.cpp	13af409c3c037453
-32	131	7685693166155420	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/wovmohCore_autogen/timestamp	13af409c3c037453
-32	131	7685693166155420	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/wovmohCore_autogen/mocs_compilation.cpp	13af409c3c037453
+41	157	7686569396440714	wovmohCore_autogen/mocs_compilation.cpp	13af409c3c037453
+41	157	7686569396440714	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/wovmohCore_autogen/timestamp	13af409c3c037453
+41	157	7686569396440714	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/wovmohCore_autogen/mocs_compilation.cpp	13af409c3c037453
+160	3520	7686562082548054	CMakeFiles/wovmohCore.dir/node.cpp.obj	b13ca72133d3ab85
+161	7722	7686569397636570	CMakeFiles/wovmohCore.dir/patchgraph.cpp.obj	bae57677ab953725
+158	5087	7686569397596577	CMakeFiles/wovmohCore.dir/main.cpp.obj	2f14a179bb8f8b27
+7723	11706	7686569473251917	wovmohCore.exe	371304e48f7af5fa
 136	1727	7685693167194310	CMakeFiles/wovmohCore.dir/Nodes/corenodes.cpp.obj	b66748259e54b009
-132	1771	7685693167153396	CMakeFiles/wovmohCore.dir/main.cpp.obj	2f14a179bb8f8b27
-26	235	7685693214354887	wovmohCore.exe	2a1bc3b512fb743a
-10	123	7685693310506511	wovmohCore_autogen/timestamp	13af409c3c037453
-10	123	7685693310506511	wovmohCore_autogen/mocs_compilation.cpp	13af409c3c037453
-10	123	7685693310506511	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/wovmohCore_autogen/timestamp	13af409c3c037453
-10	123	7685693310506511	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/wovmohCore_autogen/mocs_compilation.cpp	13af409c3c037453
-124	1703	7685693311640760	CMakeFiles/wovmohCore.dir/main.cpp.obj	2f14a179bb8f8b27
-1703	1896	7685693327436335	wovmohCore.exe	2a1bc3b512fb743a
+164	4320	7686562082583200	CMakeFiles/wovmohCore.dir/nodes/corenodes.cpp.obj	5b04b5f25b6b9f37
