@@ -1,7 +1,6 @@
 #include "patchgraph.h"
 #include "nodes/corenodes.h"
 #include <QDebug>
-#include <fstream>
 
 PatchGraph::PatchGraph() {}
 
@@ -50,7 +49,7 @@ void PatchGraph::connect(const std::string &sourceNodeId, const std::string &out
 
     if (!sourceNode || !destNode)
     {
-        qDebug() << "Error: Source or destination node not found";
+        qDebug() << "Error: Source or destination node not found in graph";
         return;
     }
 
@@ -200,10 +199,6 @@ json PatchGraph::toJson() const
         {"metadata", {{"version", 0.1}, {"title", title}, {"description", description}, {"author", author}}},
         {"nodes", nodesJson},
         {"connections", connectionsJson}};
-    // TEMP, save to file
-    // write prettified JSON to another file
-    std::ofstream o("../pretty.json");
-    o << std::setw(4) << j << std::endl;
     return j;
 }
 
