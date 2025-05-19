@@ -1,8 +1,8 @@
 #ifndef CORENODES_H
 #define CORENODES_H
 
-#include "../Node.h" // Assuming Node.h contains the base Node class definition
-#include "../Pin.h"  // Assuming Pin.h contains PinDataType, InputPin, OutputPin, DataValue definitions
+#include "../core/Node.h"
+#include "../core/Pin.h"
 #include <string>
 #include <variant> // For std::holds_alternative, std::get, std::monostate
 #include <QDebug>

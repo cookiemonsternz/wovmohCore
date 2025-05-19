@@ -1,0 +1,15 @@
+-rootPath
+C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore
+-cmake-output
+-output-file
+C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/.qt/qml_imports/wovmohCore_conf.cmake
+-importPath
+C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/wovmohCore
+-importPath
+C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build
+-importPath
+C:/Qt/6.9.0/mingw_64/qml
+-qrcFiles
+C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/.qt/rcc/qmake_wovmohCore.qrc
+C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/.qt/rcc/wovmohCore_raw_qml_0.qrc
+C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/.qt/rcc/wovmohCore_raw_qml_0_extra_qmldirs.qrc

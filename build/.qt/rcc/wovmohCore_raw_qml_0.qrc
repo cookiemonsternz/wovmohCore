@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/qt/qml/wovmohCore/">
+    <file alias="ui/Main.qml">C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/ui/Main.qml</file>
+    <file alias="ui/test.qml">C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/ui/test.qml</file>
+  </qresource>
+</RCC>
+

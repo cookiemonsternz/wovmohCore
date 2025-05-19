@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/wovmohCore">
+    <file alias="qmldir">C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/wovmohCore/qmldir</file>
+  </qresource>
+</RCC>
+

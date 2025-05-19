@@ -1,5 +1,5 @@
 #include "corenodes.h"
-#include "../Pin.h" // For PinDataType, InputPin, OutputPin, DataValue if not fully defined in Node.h or ConcreteNodes.h
+#include "../core/pin.h" // For PinDataType, InputPin, OutputPin, DataValue if not fully defined in Node.h or ConcreteNodes.h
 #include <QDebug> // For qDebug()
 
 // ConstantNumberNode Implementation

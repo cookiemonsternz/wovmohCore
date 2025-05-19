@@ -1,13 +1,19 @@
 #include <QCoreApplication>
+#include <QGuiApplication>
+#include <QQmlApplicationEngine>
 #include <QDebug>
 #include <iostream>
 #include <fstream>
-#include "DataTypes.h"
-#include "patchgraph.h"
-#include "node.h"
-#include "nodes/corenodes.h"
+#include <QQuickView>
+#include <QQmlContext>
+#include <QQmlEngine>
+#include "types/datatypes.h"
+#include "core/patchgraph.h"
+#include "graph/patchmanager.h"
+// #include "node.h"
+// #include "nodes/corenodes.h"
 
-int main(int argc, char *argv[])
+int core_main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
     qDebug() << "starting app.";
@@ -43,8 +49,8 @@ int main(int argc, char *argv[])
     
     patchGraph.fromJson(j);
 
-    // Re-sort and evaluate
-    patchGraph.resort();
+    // sort and evaluate
+    patchGraph.sort();
     patchGraph.evaluate();
 
     // Serialize to JSON
@@ -52,4 +58,43 @@ int main(int argc, char *argv[])
     qDebug() << "Engine test finished";
 
     return a.exec();
+}
+
+int main(int argc, char *argv[])
+{
+    QGuiApplication app(argc, argv);
+
+    // qmlRegisterType<PatchManager>("WovmohCore", 1, 0, "PatchManager");
+
+    PatchManager patchManager;
+    QQuickView view;
+
+    auto patchGraph = std::make_unique<PatchGraph>();
+
+    std::ifstream i("../pretty.json");
+    json j;
+    i >> j;
+    
+    patchGraph->fromJson(j);
+
+    // // sort and evaluate
+    // patchGraph.sort();
+    // patchGraph.evaluate();
+
+    patchManager.setPatchGraph(std::move(patchGraph));
+    // patchManager.patchGraphToData(*patchManager.getPatchGraph());
+    // view.rootContext()->setContextProperty("patchManager", &patchManager);
+    // view.setInitialProperties({{"patchManager", QVariant::fromValue(&patchManager)}});
+    qDebug() << "PatchManager set";
+    view.rootContext()->setContextProperty("patchManager", &patchManager);
+    qDebug() << "Context set";
+    view.setSource(QUrl::fromLocalFile("wovmohCore/ui/test.qml"));
+    
+    qDebug() << "Source set";
+
+    view.show();
+
+    qDebug() << "View shown";
+    
+    return app.exec();
 }

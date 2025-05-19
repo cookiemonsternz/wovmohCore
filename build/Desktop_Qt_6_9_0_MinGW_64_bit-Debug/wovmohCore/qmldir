@@ -1,0 +1,5 @@
+module wovmohCore
+typeinfo wovmohCore.qmltypes
+prefer :/qt/qml/wovmohCore/
+Main 1.0 ui/Main.qml
+

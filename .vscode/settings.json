@@ -91,6 +91,11 @@
         "ranges": "cpp",
         "valarray": "cpp",
         "fstream": "cpp",
-        "iostream": "cpp"
-    }
+        "iostream": "cpp",
+        "qobject": "cpp",
+        "regex": "cpp",
+        "bitset": "cpp",
+        "source_location": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
