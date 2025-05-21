@@ -32,8 +32,10 @@ qt_add_qml_module(wovmohCore
     URI wovmohCore
     VERSION 1.0
     QML_FILES
+        ui/Pin.qml
         ui/Main.qml
-        ui/test.qml
+        ui/Node.qml
+        ui/main.js
         QML_FILES
         SOURCES graph/patchmanager.h graph/patchmanager.cpp
 )

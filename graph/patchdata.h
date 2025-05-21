@@ -34,6 +34,11 @@ public:
     }
     QQmlListProperty<NodeData> getNodes() { return QQmlListProperty<NodeData>(this, &nodes); }
     QQmlListProperty<PinData> getConnections() { return QQmlListProperty<PinData>(this, &connections); }
+    void addNode(NodeData *node)
+    {
+        nodes.append(node);
+        emit nodesChanged();
+    }
 private:
     QString title;
     QString description;

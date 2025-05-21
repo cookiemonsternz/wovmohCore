@@ -1039,7 +1039,9 @@
 		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/.qt/rcc/qrc_wovmohCore_raw_qml_0_extra_qmldirs.cpp",
 		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/.rcc/qmlcache/wovmohCore_qmlcache_loader.cpp",
 		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/.rcc/qmlcache/wovmohCore_ui/Main_qml.cpp",
-		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/.rcc/qmlcache/wovmohCore_ui/test_qml.cpp",
+		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/.rcc/qmlcache/wovmohCore_ui/Node_qml.cpp",
+		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/.rcc/qmlcache/wovmohCore_ui/Pin_qml.cpp",
+		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/.rcc/qmlcache/wovmohCore_ui/main_js.cpp",
 		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/wovmohcore_qmltyperegistrations.cpp"
 	],
 	"MULTI_CONFIG" : false,
@@ -1107,7 +1109,9 @@
 		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/.qt/rcc/qrc_wovmohCore_raw_qml_0_extra_qmldirs.cpp",
 		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/.rcc/qmlcache/wovmohCore_qmlcache_loader.cpp",
 		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/.rcc/qmlcache/wovmohCore_ui/Main_qml.cpp",
-		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/.rcc/qmlcache/wovmohCore_ui/test_qml.cpp",
+		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/.rcc/qmlcache/wovmohCore_ui/Node_qml.cpp",
+		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/.rcc/qmlcache/wovmohCore_ui/Pin_qml.cpp",
+		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/.rcc/qmlcache/wovmohCore_ui/main_js.cpp",
 		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/wovmohcore_qmltyperegistrations.cpp"
 	],
 	"UIC_UI_FILES" : [],

@@ -1,0 +1,42 @@
+{
+    "classes": [
+        {
+            "className": "PatchManager",
+            "lineNumber": 20,
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "patchData",
+                    "notify": "patchDataChanged",
+                    "read": "getPatchData",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "PatchData*",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "PatchManager",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "patchDataChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "patchmanager.h",
+    "outputRevision": 69
+}

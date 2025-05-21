@@ -1,13 +1,9 @@
 #include <QCoreApplication>
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
-#include <QDebug>
-#include <iostream>
-#include <fstream>
-#include <QQuickView>
 #include <QQmlContext>
-#include <QQmlEngine>
-#include "types/datatypes.h"
+#include <QDebug>
+#include <fstream>
 #include "core/patchgraph.h"
 #include "graph/patchmanager.h"
 // #include "node.h"
@@ -64,10 +60,18 @@ int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
 
+    QQmlApplicationEngine engine;
+    QObject::connect(
+        &engine,
+        &QQmlApplicationEngine::objectCreationFailed,
+        &app,
+        []() { QCoreApplication::exit(-1); },
+        Qt::QueuedConnection);
+    engine.loadFromModule("wovmohCore", "Main");
+
     // qmlRegisterType<PatchManager>("WovmohCore", 1, 0, "PatchManager");
 
     PatchManager patchManager;
-    QQuickView view;
 
     auto patchGraph = std::make_unique<PatchGraph>();
 
@@ -77,24 +81,11 @@ int main(int argc, char *argv[])
     
     patchGraph->fromJson(j);
 
-    // // sort and evaluate
-    // patchGraph.sort();
-    // patchGraph.evaluate();
-
     patchManager.setPatchGraph(std::move(patchGraph));
-    // patchManager.patchGraphToData(*patchManager.getPatchGraph());
-    // view.rootContext()->setContextProperty("patchManager", &patchManager);
-    // view.setInitialProperties({{"patchManager", QVariant::fromValue(&patchManager)}});
-    qDebug() << "PatchManager set";
-    view.rootContext()->setContextProperty("patchManager", &patchManager);
-    qDebug() << "Context set";
-    view.setSource(QUrl::fromLocalFile("wovmohCore/ui/test.qml"));
+
+    engine.rootContext()->setContextProperty("patchManager", &patchManager);
     
-    qDebug() << "Source set";
-
-    view.show();
-
-    qDebug() << "View shown";
+    
     
     return app.exec();
 }

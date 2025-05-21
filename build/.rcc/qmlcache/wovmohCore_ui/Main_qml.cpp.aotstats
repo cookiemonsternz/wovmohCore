@@ -3,6 +3,22 @@
         "moduleFiles": [
             {
                 "entries": [
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 1798,
+                        "errorMessage": "Cannot access value for name patchManager",
+                        "functionName": "onClicked",
+                        "line": 15
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 1240,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 14
+                    }
                 ],
                 "filepath": "C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/ui/Main.qml"
             }

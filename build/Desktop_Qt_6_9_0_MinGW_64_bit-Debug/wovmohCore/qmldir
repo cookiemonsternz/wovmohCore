@@ -1,5 +1,7 @@
 module wovmohCore
 typeinfo wovmohCore.qmltypes
 prefer :/qt/qml/wovmohCore/
+Pin 1.0 ui/Pin.qml
 Main 1.0 ui/Main.qml
+Test 1.0 ui/Test.qml
 

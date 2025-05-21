@@ -1,0 +1,65 @@
+# ninja log v6
+13	45	7693483659069834	.qt/wovmohCore_qml.txt	a9b775253786d185
+13	45	7693483659069834	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.qt/wovmohCore_qml.txt	a9b775253786d185
+18	47	7693483659112220	.qt/wovmohCore_res.txt	91463fa7343c39f7
+18	47	7693483659112220	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.qt/wovmohCore_res.txt	91463fa7343c39f7
+22	551	7693483664141787	.qt/qml_imports/wovmohCore_build.cmake	a700443dad73920b
+22	551	7693483664141787	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.qt/qml_imports/wovmohCore_build.cmake	a700443dad73920b
+552	1265	7693483670562997	wovmohCore_autogen/timestamp	ba594ab93701bae1
+552	1265	7693483670562997	wovmohCore_autogen/mocs_compilation.cpp	ba594ab93701bae1
+552	1265	7693483670562997	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/wovmohCore_autogen/timestamp	ba594ab93701bae1
+552	1265	7693483670562997	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/wovmohCore_autogen/mocs_compilation.cpp	ba594ab93701bae1
+1272	1341	7693483671832295	meta_types/wovmohCore_json_file_list.txt	d2c85dc43720e929
+1272	1341	7693483671832295	meta_types/wovmohCore_json_file_list.txt.timestamp	d2c85dc43720e929
+1272	1341	7693483671832295	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/meta_types/wovmohCore_json_file_list.txt	d2c85dc43720e929
+1272	1341	7693483671832295	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/meta_types/wovmohCore_json_file_list.txt.timestamp	d2c85dc43720e929
+1277	1350	7693483672053292	.qt/rcc/qrc_qmake_wovmohCore.cpp	ebc8eb0729d6559
+1277	1350	7693483672053292	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_wovmohCore.cpp	ebc8eb0729d6559
+1297	1379	7693483672299230	.qt/rcc/qrc_wovmohCore_raw_qml_0_extra_qmldirs.cpp	ff1c55d6349ee75c
+1297	1379	7693483672299230	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.qt/rcc/qrc_wovmohCore_raw_qml_0_extra_qmldirs.cpp	ff1c55d6349ee75c
+1289	1381	7693483672289212	.qt/rcc/qrc_wovmohCore_raw_qml_0.cpp	631cfa7b97aad672
+1289	1381	7693483672289212	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.qt/rcc/qrc_wovmohCore_raw_qml_0.cpp	631cfa7b97aad672
+1282	1385	7693483672319358	.rcc/qmlcache/wovmohCore_qmlcache_loader.cpp	253a7fc901bca2da
+1282	1385	7693483672319358	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_qmlcache_loader.cpp	253a7fc901bca2da
+1341	1418	7693483672814025	meta_types/qt6wovmohcore_debug_metatypes.json.gen	f08f33fb5b7a0261
+1341	1418	7693483672814025	meta_types/qt6wovmohcore_debug_metatypes.json	f08f33fb5b7a0261
+1341	1418	7693483672814025	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/meta_types/qt6wovmohcore_debug_metatypes.json.gen	f08f33fb5b7a0261
+1341	1418	7693483672814025	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/meta_types/qt6wovmohcore_debug_metatypes.json	f08f33fb5b7a0261
+1419	1587	7693483674121803	wovmohcore_qmltyperegistrations.cpp	6d7f04db5bbab83d
+1419	1587	7693483674121803	wovmohCore/wovmohCore.qmltypes	6d7f04db5bbab83d
+1419	1587	7693483674121803	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/wovmohcore_qmltyperegistrations.cpp	6d7f04db5bbab83d
+1419	1587	7693483674121803	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/wovmohCore/wovmohCore.qmltypes	6d7f04db5bbab83d
+1604	1663	7693483675230020	.rcc/qmlcache/wovmohCore_ui/main_js.cpp	cc7647baa8bfd21f
+1604	1663	7693483675230020	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_ui/main_js.cpp	cc7647baa8bfd21f
+1587	1692	7693483675485585	.rcc/qmlcache/wovmohCore_ui/Pin_qml.cpp	6c180003676d4f00
+1587	1692	7693483675485585	.rcc/qmlcache/wovmohCore_ui/Pin_qml.cpp.aotstats	6c180003676d4f00
+1587	1692	7693483675485585	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_ui/Pin_qml.cpp	6c180003676d4f00
+1587	1692	7693483675485585	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_ui/Pin_qml.cpp.aotstats	6c180003676d4f00
+1592	1695	7693483675505635	.rcc/qmlcache/wovmohCore_ui/Main_qml.cpp	b550db7ab82257b
+1592	1695	7693483675505635	.rcc/qmlcache/wovmohCore_ui/Main_qml.cpp.aotstats	b550db7ab82257b
+1592	1695	7693483675505635	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_ui/Main_qml.cpp	b550db7ab82257b
+1592	1695	7693483675505635	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_ui/Main_qml.cpp.aotstats	b550db7ab82257b
+1598	1700	7693483675555646	.rcc/qmlcache/wovmohCore_ui/Test_qml.cpp	1322f50eaf6fb44b
+1598	1700	7693483675555646	.rcc/qmlcache/wovmohCore_ui/Test_qml.cpp.aotstats	1322f50eaf6fb44b
+1598	1700	7693483675555646	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_ui/Test_qml.cpp	1322f50eaf6fb44b
+1598	1700	7693483675555646	C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_ui/Test_qml.cpp.aotstats	1322f50eaf6fb44b
+1735	1840	7693483676046589	CMakeFiles/wovmohCore.dir/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_wovmohCore.cpp.obj	3d1f11d78927e6ac
+1767	1866	7693483676362501	CMakeFiles/wovmohCore.dir/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.qt/rcc/qrc_wovmohCore_raw_qml_0.cpp.obj	82fbdba06b8e13e2
+1840	1932	7693483677098246	CMakeFiles/wovmohCore.dir/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.qt/rcc/qrc_wovmohCore_raw_qml_0_extra_qmldirs.cpp.obj	436059c6070bbe29
+1706	2782	7693483675751618	CMakeFiles/wovmohCore.dir/core/pin.cpp.obj	81165d06c520bfb3
+1723	4525	7693483675921274	CMakeFiles/wovmohCore.dir/graph/pindata.cpp.obj	9c07bfbf0df53cc4
+1719	4836	7693483675881099	CMakeFiles/wovmohCore.dir/graph/nodedata.cpp.obj	22371d141c5c36f2
+1715	4840	7693483675846033	CMakeFiles/wovmohCore.dir/graph/patchdata.cpp.obj	6cbea7af748b1ec4
+1731	5547	7693483676006625	CMakeFiles/wovmohCore.dir/wovmohcore_qmltyperegistrations.cpp.obj	a9d4db4dc748c4f2
+1748	5548	7693483676171920	CMakeFiles/wovmohCore.dir/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_ui/Pin_qml.cpp.obj	92e2ca89237d75f7
+1762	5550	7693483676312511	CMakeFiles/wovmohCore.dir/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_ui/main_js.cpp.obj	3fd08156df61e2d0
+1757	5665	7693483676257159	CMakeFiles/wovmohCore.dir/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_ui/Test_qml.cpp.obj	9c2cd7a7dc64bc8d
+1752	5708	7693483676217185	CMakeFiles/wovmohCore.dir/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_ui/Main_qml.cpp.obj	69561c5cceb54250
+1744	6262	7693483676131934	CMakeFiles/wovmohCore.dir/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_qmlcache_loader.cpp.obj	257d093b67220417
+1709	6815	7693483675781605	CMakeFiles/wovmohCore.dir/core/node.cpp.obj	f73aa943ca003f7e
+1727	7376	7693483675961316	CMakeFiles/wovmohCore.dir/nodes/corenodes.cpp.obj	6a820d43aa89c600
+1700	7404	7693483675691555	CMakeFiles/wovmohCore.dir/wovmohCore_autogen/mocs_compilation.cpp.obj	b49a2660cad10af8
+1740	7501	7693483676091826	CMakeFiles/wovmohCore.dir/graph/patchmanager.cpp.obj	dc76ed0a07d1e75e
+1703	8535	7693483675721671	CMakeFiles/wovmohCore.dir/main.cpp.obj	6193088574c55b63
+1712	9530	7693483675816034	CMakeFiles/wovmohCore.dir/core/patchgraph.cpp.obj	c94c632761815d8a
+9530	12882	7693483753990105	wovmohCore.exe	507ac9f430de483a
