@@ -912,9 +912,27 @@
 			null
 		],
 		[
+			"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/graph/nodedata.h",
+			"MU",
+			"35G2TUPHEV/moc_nodedata.cpp",
+			null
+		],
+		[
+			"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/graph/patchdata.h",
+			"MU",
+			"35G2TUPHEV/moc_patchdata.cpp",
+			null
+		],
+		[
 			"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/graph/patchmanager.h",
 			"MU",
 			"35G2TUPHEV/moc_patchmanager.cpp",
+			null
+		],
+		[
+			"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/graph/pindata.h",
+			"MU",
+			"35G2TUPHEV/moc_pindata.cpp",
 			null
 		],
 		[
@@ -1021,7 +1039,9 @@
 		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.qt/rcc/qrc_wovmohCore_raw_qml_0_extra_qmldirs.cpp",
 		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_qmlcache_loader.cpp",
 		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_ui/Main_qml.cpp",
-		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_ui/test_qml.cpp",
+		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_ui/Pin_qml.cpp",
+		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_ui/Test_qml.cpp",
+		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_ui/main_js.cpp",
 		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/wovmohcore_qmltyperegistrations.cpp"
 	],
 	"MULTI_CONFIG" : false,
@@ -1050,7 +1070,22 @@
 			null
 		],
 		[
+			"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/graph/nodedata.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/graph/patchdata.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/graph/patchmanager.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/graph/pindata.cpp",
 			"MU",
 			null
 		],
@@ -1074,7 +1109,9 @@
 		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.qt/rcc/qrc_wovmohCore_raw_qml_0_extra_qmldirs.cpp",
 		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_qmlcache_loader.cpp",
 		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_ui/Main_qml.cpp",
-		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_ui/test_qml.cpp",
+		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_ui/Pin_qml.cpp",
+		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_ui/Test_qml.cpp",
+		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.rcc/qmlcache/wovmohCore_ui/main_js.cpp",
 		"C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/wovmohcore_qmltyperegistrations.cpp"
 	],
 	"UIC_UI_FILES" : [],

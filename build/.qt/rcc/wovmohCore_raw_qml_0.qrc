@@ -1,7 +1,9 @@
 <RCC>
   <qresource prefix="/qt/qml/wovmohCore/">
+    <file alias="ui/Pin.qml">C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/ui/Pin.qml</file>
     <file alias="ui/Main.qml">C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/ui/Main.qml</file>
-    <file alias="ui/test.qml">C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/ui/test.qml</file>
+    <file alias="ui/Node.qml">C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/ui/Node.qml</file>
+    <file alias="ui/main.js">C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/ui/main.js</file>
   </qresource>
 </RCC>
 

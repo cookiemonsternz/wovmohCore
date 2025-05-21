@@ -5,6 +5,13 @@
 #include <QtCore/qstring.h>
 
 namespace QmlCacheGeneratedCode {
+namespace _qt_qml_wovmohCore_ui_Pin_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 namespace _qt_qml_wovmohCore_ui_Main_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
@@ -12,7 +19,14 @@ namespace _qt_qml_wovmohCore_ui_Main_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_wovmohCore_ui_test_qml { 
+namespace _qt_qml_wovmohCore_ui_Node_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_wovmohCore_ui_main_js { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
@@ -33,8 +47,10 @@ Q_GLOBAL_STATIC(Registry, unitRegistry)
 
 
 Registry::Registry() {
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/wovmohCore/ui/Pin.qml"), &QmlCacheGeneratedCode::_qt_qml_wovmohCore_ui_Pin_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/wovmohCore/ui/Main.qml"), &QmlCacheGeneratedCode::_qt_qml_wovmohCore_ui_Main_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/wovmohCore/ui/test.qml"), &QmlCacheGeneratedCode::_qt_qml_wovmohCore_ui_test_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/wovmohCore/ui/Node.qml"), &QmlCacheGeneratedCode::_qt_qml_wovmohCore_ui_Node_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/wovmohCore/ui/main.js"), &QmlCacheGeneratedCode::_qt_qml_wovmohCore_ui_main_js::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

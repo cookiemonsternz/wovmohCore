@@ -34,7 +34,9 @@ PatchData* PatchManager::patchGraphToData(const PatchGraph &patchGraph)
         {
             nodeData->addOutputPin(QString::fromStdString(outputPin->getId()), QString::fromStdString(outputPin->getName()));
         }
-        qDebug() << "Node: " << nodeData->getId() << "Type:" << nodeData->getType() << "Position:" << nodeData->getPosition().toString();
+
+        patchData->addNode(nodeData);
+        // qDebug() << "Node: " << nodeData->getId() << "Type:" << nodeData->getType() << "Position:" << nodeData->getPosition().toString();
     }
     return patchData;
 }

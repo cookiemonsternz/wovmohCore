@@ -1,0 +1,28 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 1597,
+                        "errorMessage": "Cannot access value for name patchManager",
+                        "functionName": "onClicked",
+                        "line": 11
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 1085,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 10
+                    }
+                ],
+                "filepath": "C:/Users/Christopher/Documents/.Projects/QT Projects/wovmohCore/ui/Test.qml"
+            }
+        ],
+        "moduleId": "wovmohCore(wovmohCore)"
+    }
+]
